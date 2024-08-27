@@ -1,0 +1,91 @@
+/* App.css */
+
+/* Style pour le conteneur principal */
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4; /* Couleur de fond du conteneur */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+  }
+  
+  /* Style pour la carte produit */
+  .card {
+    width: 350px;
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 15px; /* Bords arrondis */
+    overflow: hidden; /* Pour gérer l'image */
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Dégradé pour le fond de la carte */
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Effet d'ombre */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée au survol */
+  }
+  
+  /* Style pour l'image du produit */
+  .card-img-top {
+    height: 200px;
+    object-fit: cover; /* Pour que l'image remplisse l'espace */
+    border-bottom: 3px solid #fff; /* Séparation nette avec l'image */
+  }
+  
+  /* Style pour le titre du produit */
+  .card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour le sous-titre du produit (prix) */
+  .card-subtitle {
+    color: #ffeb3b; /* Couleur jaune pour le prix */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour la description du produit */
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #e0e0e0; /* Texte légèrement grisé */
+  }
+  
+  /* Style pour le message de bienvenue */
+  .welcome-message {
+    font-family: 'Pacifico', cursive; /* Police manuscrite pour le message */
+    font-size: 2rem;
+    color: #333;
+    margin-top: 30px;
+    text-align: center;
+    animation: fadeIn 1s ease; /* Animation pour faire apparaître le texte */
+  }
+  
+  /* Style pour l'image de bienvenue */
+  .welcome-image {
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    border-radius: 50%; /* Image ronde */
+    border: 5px solid #6e8efb; /* Bordure colorée */
+  }
+  
+  /* Animation pour faire apparaître le message en douceur */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
